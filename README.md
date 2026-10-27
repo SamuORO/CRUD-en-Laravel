@@ -109,6 +109,8 @@ Para comprobar que Laravel funcionaba correctamente, se inició el servidor loca
 php artisan serve
 ```
 
+<img width="1291" height="591" alt="image" src="https://github.com/user-attachments/assets/53fca240-91b2-4297-be39-7cd937b21b07" />
+
 Posteriormente, se abrió la dirección local en el navegador:
 
 `http://localhost:8000`
@@ -138,6 +140,8 @@ protected $fillable = [
 ];
 ```
 
+<img width="517" height="386" alt="image" src="https://github.com/user-attachments/assets/004a5a81-16d7-4caa-a4a4-021156470ab3" />
+
 Los campos corresponden al nombre, la descripción, el precio y la cantidad disponible de cada producto.
 
 ### 5.2. Vista
@@ -152,6 +156,9 @@ Las vistas principales del CRUD se encuentran en `resources/views/products/`:
 - `edit.blade.php`: permite modificar los datos de un producto.
 
 Las vistas utilizan `layouts.app` como plantilla base y clases de Bootstrap para mantener una apariencia consistente.
+
+<img width="270" height="137" alt="image" src="https://github.com/user-attachments/assets/c1e2dd43-3174-4c5d-b8df-8511aa492188" />
+
 
 ### 5.3. Controlador
 
@@ -200,6 +207,9 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])
 ```
 
 La ruta `/home` se modificó para mostrar la lista de productos. La ruta `/products` es la dirección principal de la gestión de productos.
+
+<img width="965" height="321" alt="image" src="https://github.com/user-attachments/assets/0510dd1f-7494-4266-9bde-cf5c131e5e34" />
+
 
 ## 6. Configuración de la base de datos MySQL
 
@@ -256,6 +266,9 @@ Para ejecutar las migraciones se utilizó:
 php artisan migrate
 ```
 
+<img width="1101" height="280" alt="image" src="https://github.com/user-attachments/assets/ba14a5b7-237a-480c-939c-c72a82a32b82" />
+
+
 Durante la práctica se crearon las tablas iniciales de Laravel y la tabla de productos. Entre las tablas del proyecto se encuentran:
 
 - `users`: almacena la información de los usuarios.
@@ -266,6 +279,9 @@ Durante la práctica se crearon las tablas iniciales de Laravel y la tabla de pr
 - `products`: almacena los productos del CRUD.
 
 Para verificar el estado de las migraciones se utilizó:
+
+<img width="1415" height="395" alt="image" src="https://github.com/user-attachments/assets/ea404711-f054-4c67-838c-91bc593a330b" />
+
 
 ```powershell
 php artisan migrate:status
@@ -285,6 +301,9 @@ La tabla `products` contiene los siguientes campos:
 | `created_at` | Fecha de creación del registro |
 | `updated_at` | Fecha de la última actualización |
 
+<img width="1021" height="120" alt="image" src="https://github.com/user-attachments/assets/3913a8c0-77e5-4409-bc82-e2f7463b4859" />
+
+
 ### 6.4. Respaldo de la base de datos
 
 Como parte de la documentación del laboratorio, se recomienda generar un respaldo de la base de datos.
@@ -297,7 +316,8 @@ El respaldo puede obtenerse desde phpMyAdmin siguiendo estos pasos:
 4. Descargar el archivo generado.
 5. Guardar una copia en el repositorio, por ejemplo, en `database/backup/crud.sql`.
 
-**Nota:** el respaldo solo se considera realizado cuando el archivo SQL se haya exportado y guardado realmente. No se debe incluir un archivo de respaldo ficticio.
+<img width="888" height="426" alt="image" src="https://github.com/user-attachments/assets/b9c324f0-e18a-4bdb-8f87-449b3eda8b33" />
+
 
 ## 7. Implementación del CRUD de productos
 
@@ -367,6 +387,9 @@ Los formularios utilizan directivas de Blade como `@csrf` para incluir el token 
 
 La interfaz utiliza componentes y clases de Bootstrap, como tarjetas, tablas, botones, alertas y formularios, para mantener una presentación uniforme.
 
+<img width="1716" height="456" alt="Captura de pantalla 2026-10-27 154931" src="https://github.com/user-attachments/assets/7ad1ed1a-ba56-423f-a158-9ae1ff74e192" />
+
+
 ### 7.5. Numeración de los productos
 
 En la lista se agregó una numeración consecutiva independiente del identificador real de la base de datos. Para ello, la vista recorre los productos con un índice:
@@ -395,6 +418,8 @@ La ruta principal se configuró para mostrar la lista de productos. También se 
 
 La lista presenta el nombre, la descripción, el precio, el stock y los botones para ver, editar o eliminar cada producto.
 
+<img width="1716" height="456" alt="image" src="https://github.com/user-attachments/assets/e1ad25e4-ce2f-4760-934b-9b1f9d5b4b35" />
+
 ### 8.2. Creación de productos
 
 Se accedió al formulario de creación mediante:
@@ -405,6 +430,9 @@ Se preparó un formulario con los campos nombre, descripción, precio y stock. A
 
 Después de guardar correctamente, la aplicación redirige a la lista de productos y muestra un mensaje de confirmación.
 
+<img width="1701" height="756" alt="image" src="https://github.com/user-attachments/assets/cc7d2516-3a54-4d30-8b87-934c66877bc0" />
+
+
 ### 8.3. Consulta de productos
 
 Se puede consultar la lista desde `/products` y ver los detalles individuales desde la ruta de cada producto, por ejemplo:
@@ -412,6 +440,8 @@ Se puede consultar la lista desde `/products` y ver los detalles individuales de
 `http://localhost:8000/products/1`
 
 La vista de detalles presenta los datos del producto seleccionado y permite regresar a la lista o abrir su formulario de edición.
+
+<img width="1691" height="530" alt="image" src="https://github.com/user-attachments/assets/0f3d3f9a-a1cf-43f3-8f0c-cb17c37e396d" />
 
 ### 8.4. Edición de productos
 
@@ -421,6 +451,8 @@ Se accede al formulario de edición desde el botón **Editar** de la lista. La d
 
 El formulario carga los datos existentes del producto. Al enviar los cambios, el controlador valida la información y actualiza el registro en MySQL.
 
+<img width="1682" height="767" alt="image" src="https://github.com/user-attachments/assets/8f79e968-f67e-45c0-bcc0-d34edb89d65a" />
+
 ### 8.5. Eliminación de productos
 
 La lista contiene un botón **Eliminar** para cada registro. La solicitud se envía mediante un formulario `POST` que incluye `@method('DELETE')` y `@csrf`.
@@ -428,6 +460,8 @@ La lista contiene un botón **Eliminar** para cada registro. La solicitud se env
 Antes de enviar la solicitud, la interfaz solicita confirmación. Si se confirma la acción, Laravel elimina el registro y redirige a la lista.
 
 Después de eliminar un producto, la numeración visual se vuelve a calcular desde uno. Esto no cambia los identificadores reales almacenados en la base de datos.
+
+<img width="1700" height="440" alt="image" src="https://github.com/user-attachments/assets/9132d2b4-0600-4da5-9477-6599f577cc1f" />
 
 ### 8.6. Autenticación y página de inicio
 
