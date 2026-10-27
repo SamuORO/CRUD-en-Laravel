@@ -35,18 +35,17 @@ Para realizar el laboratorio se utilizaron las siguientes herramientas y tecnolo
 
 | Tecnología | Detalle |
 |:---:|---|
-| Sistema operativo | **Windows 11** |
-| PHP | **8.3.28** |
-| Composer | **2.10.3** |
-| Laravel Installer | **5.32.0** |
-| Laravel Framework | **13.37.0** |
-| Servidor web | **Apache 2.4.65**, incluido en WampServer |
-| Base de datos | **MySQL 8.4.7**, administrada con phpMyAdmin 5.2.3 |
-| Entorno de desarrollo local | **WampServer**, directorio `C:\wamp64\www` |
-| Editor de código | **Visual Studio Code** |
-| Herramientas frontend | **npm** y Vite |
-| Interfaz | **Blade y Bootstrap**, con Laravel UI 4.6.3 |
-| Navegador web | **Google Chrome** |
+| <img width="60" height="60" alt="image" src="https://github.com/user-attachments/assets/13ed7e81-cfcf-45ec-9b0b-5c5b522a955c" />| **Sistema operativo:** Windows 11 |
+| <img width="60" height="60" alt="image" src="https://github.com/user-attachments/assets/2c3a1372-de3d-4bd1-b653-15680e96b570" />| **PHP:** 8.3.28 |
+| <img width="60" height="60" alt="image" src="https://github.com/user-attachments/assets/ffe48f2e-845d-47a2-a4d2-e8f0ab65b080" />| **Composer:** 2.10.3 |
+| <img width="60" height="60" alt="image" src="https://github.com/user-attachments/assets/1601ea0b-57bd-4c9f-a879-c7cdb5816eb8" />| **Laravel Installer:** 5.32.0 · **Laravel Framework:** 13.37.0 (`laravel new`) |
+| <img width="60" height="60" alt="image" src="https://github.com/user-attachments/assets/403b59f3-6fd5-4a29-8510-d93cd0dda1ee" />| **Servidor web:** Apache 2.4.65, incluido en WampServer |
+| <img width="60" height="60" alt="image" src="https://github.com/user-attachments/assets/6df06f68-e255-431d-9c8a-477d491f2c65" />| **Base de datos:** MySQL 8.4.7, administrada con phpMyAdmin 5.2.3 (usuario `root`) |
+| <img width="60" height="60" alt="image" src="https://github.com/user-attachments/assets/d436645b-022d-4d0b-9a77-6f8bcf6039db" />| **Entorno de desarrollo local:** WampServer (`C:\wamp64\www`) |
+| <img width="60" height="60" alt="image" src="https://github.com/user-attachments/assets/e6f29db3-cb0b-4a5e-8738-aefb279b463d" />| **Editor de código:** Visual Studio Code |
+| <img width="60" height="60" alt="image" src="https://github.com/user-attachments/assets/dd9618a2-2e74-4cc0-bfbb-323fd41248dc" />| **Herramientas frontend:** npm (`npm install` y `npm run dev`) con Vite 8.3.4 |
+| <img width="60" height="60" alt="image" src="https://github.com/user-attachments/assets/1601ea0b-57bd-4c9f-a879-c7cdb5816eb8" /> | **Autenticación:** Laravel UI 4.6.3, con scaffolding de Bootstrap |
+| <img width="60" height="60" alt="image" src="https://github.com/user-attachments/assets/e4b25607-0eb9-487a-b70c-142abf23db7d" />| **Navegador web:** Google Chrome |
 
 ### 3.1. Verificación de las herramientas
 
